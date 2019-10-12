@@ -123,6 +123,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ApartmentSale.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Date.cpp" />
+    <ClCompile Include="HouseSale.cpp" />
+    <ClCompile Include="LandSale.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Property.cpp" />
+    <ClCompile Include="RealEstateAgent.cpp" />
+    <ClCompile Include="RealEstateManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApartmentSale.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="HouseSale.h" />
+    <ClInclude Include="LandSale.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Property.h" />
+    <ClInclude Include="RealEstateAgent.h" />
+    <ClInclude Include="RealEstateManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
