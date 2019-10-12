@@ -9,6 +9,10 @@ class Person
 public:
 	Person();
 	Person(string, string, Date);
+	string getname();
+	void setname(string);
+	string getaddy();
+	void setaddy(string);
 	~Person();
 	virtual void print();
 private:

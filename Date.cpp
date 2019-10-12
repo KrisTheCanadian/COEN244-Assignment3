@@ -15,3 +15,10 @@ void Date::setday(int d){day_ = d;}
 int Date::getyear(){return year_;}
 
 void Date::setyear(int y){year_ = y;}
+
+void Date::print()
+{
+	std::cout << "Month: " << getmonth() << std::endl;
+	std::cout << "Day: " << getday() << std::endl;
+	std::cout << "Year: " << getyear() << std::endl;
+}
