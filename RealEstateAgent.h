@@ -6,10 +6,14 @@ class RealEstateAgent
 public:
 	RealEstateAgent();
 	RealEstateAgent(string, string, Date, int);
+	Date getemployementdate();
+	void setemployementdate(Date);
+	int getemployeeid();
+	void setemployeeid(int);
 	~RealEstateAgent();
 	virtual void print() override;
 private:
-	Date employmen_date_;
+	Date employment_date_;
 	int employee_id_;
 };
 

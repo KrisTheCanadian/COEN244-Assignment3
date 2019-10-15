@@ -7,6 +7,10 @@ class LandSale :
 public:
 	LandSale();
 	LandSale(string, string, Client, RealEstateAgent, Date, double, int);
+	double getarea();
+	void setarea(double);
+	int getprice();
+	void setprice(int);
 	~LandSale();
 	virtual void print() override;
 private:

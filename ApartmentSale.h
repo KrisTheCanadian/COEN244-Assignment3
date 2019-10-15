@@ -6,6 +6,14 @@ class ApartmentSale
 public:
 	ApartmentSale();
 	ApartmentSale(string, string, Client, RealEstateAgent, Date, int, int, int, int);
+	int getbuildyear();
+	void setbuildyear(int);
+	int getrooms();
+	void setrooms(int);
+	int getcondofee();
+	void setcondofee(int);
+	int getprice();
+	void setprice(int);
 	~ApartmentSale();
 	virtual void print() override;
 private:
