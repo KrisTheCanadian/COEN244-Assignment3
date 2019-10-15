@@ -9,3 +9,4 @@ Client::Client(string name, string addy, string social):socialinsurancenumber_(s
 
 string Client::getsocial() { return socialinsurancenumber_; }
 void Client::setsocial(string social) { socialinsurancenumber_ = social; }
+void Client::print() {}

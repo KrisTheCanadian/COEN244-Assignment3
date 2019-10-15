@@ -8,7 +8,7 @@ class Property
 {
 public:
 	Property();
-	Property(string, string, Client, RealEstateAgent*, Date);
+	Property(string, string, Client*, RealEstateAgent*, Date);
 	string getstreetaddy();
 	void setstreetaddy(string);
 	string getcityname();
@@ -22,7 +22,7 @@ public:
 	Date getdate();
 	void setdate(Date);
 	~Property();
-	virtual print();
+	virtual void print();
 private:
 	string street_address_;
 	string cityname_;

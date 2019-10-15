@@ -8,7 +8,7 @@ public:
 	LandSale();
 	LandSale(string, string, Client, RealEstateAgent, Date, double, int);
 	~LandSale();
-	virtual print();
+	virtual void print() override;
 private:
 	double area_;
 	int price_;

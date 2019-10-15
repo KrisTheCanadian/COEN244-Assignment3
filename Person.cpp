@@ -10,3 +10,4 @@ string Person::getname(){return name_;}
 void Person::setname(string name) { name_ = name; }
 string Person::getaddy() { return address_; }
 void Person::setaddy(string addy) { address_ = addy; }
+void Person::print() {}

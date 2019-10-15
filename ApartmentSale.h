@@ -1,13 +1,13 @@
 #pragma once
 #include "Property.h"
-class ApartmentSale :
-	public Property
+class ApartmentSale 
+	:public Property
 {
 public:
 	ApartmentSale();
 	ApartmentSale(string, string, Client, RealEstateAgent, Date, int, int, int, int);
 	~ApartmentSale();
-	virtual print();
+	virtual void print() override;
 private:
 	int year_of_build_;
 	int no_of_rooms_;

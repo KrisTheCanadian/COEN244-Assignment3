@@ -1,8 +1,8 @@
 #pragma once
 #include "Person.h"
 
-class Client :
-	public Person
+class Client 
+	:public Person
 {
 public:
 	Client();
@@ -10,7 +10,7 @@ public:
 	string getsocial();
 	void setsocial(string);
 	~Client();
-	virtual print();
+	void virtual print() override;
 private:
 	string socialinsurancenumber_;
 };
