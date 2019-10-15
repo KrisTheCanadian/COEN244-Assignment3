@@ -1,5 +1,21 @@
 #include "RealEstateManager.h"
 
+RealEstateManager::RealEstateManager()
+{
+	for (int i = 0; i < max_number_of_agents_; i++)
+	{
+		agentRecordsArray_[i] = 0;
+	}
+	for (int i = 0; i < listingsize_; i++)
+	{
+		propertyListingArray_[i] = 0;
+	}
+	for (int i = 0; i < archivesize_; i++)
+	{
+		archiveRecordsArray_[i] = 0;
+	}
+}
+
 bool RealEstateManager::insertAgent(RealEstateAgent* agent)
 {
 	for (int i = 0; i < max_number_of_agents_; i++)
@@ -37,11 +53,33 @@ bool RealEstateManager::propertysold(Property* prop, Client* buyer)
 	}
 	for (int i = 0; i < archivesize_; i++)
 	{
-		if (archiveRecordsArray[i] == 0)
+		if (archiveRecordsArray_[i] == 0)
 		{
-			archiveRecordsArray[i] = prop;
+			archiveRecordsArray_[i] = prop;
 		}
 		break;
+	}
+}
+
+void RealEstateManager::findHouseCity(string cityname)
+{
+	for (int i = 0; i < listingsize_; i++)
+	{
+		if (propertyListingArray_[i]->getcityname() == cityname)
+		{
+			propertyListingArray_[i]->print();
+		}
+	}
+}
+
+void RealEstateManager::findPropertiesAgent(RealEstateAgent* agent)
+{
+	for (int i = 0; i < listingsize_; i++)
+	{
+		if (propertyListingArray_[i]->getagent() == agent)
+		{
+			propertyListingArray_[i]->print();
+		}
 	}
 }
 
