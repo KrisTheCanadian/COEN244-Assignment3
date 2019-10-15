@@ -9,6 +9,18 @@ class Property
 public:
 	Property();
 	Property(string, string, Client, RealEstateAgent*, Date);
+	string getstreetaddy();
+	void setstreetaddy(string);
+	string getcityname();
+	void setcityname(string);
+	Client* getseller();
+	void setseller(Client*);
+	Client* getbuyer();
+	void setbuyer(Client*);
+	RealEstateAgent* getagent();
+	void setagent(RealEstateAgent*);
+	Date getdate();
+	void setdate(Date);
 	~Property();
 	virtual print();
 private:
