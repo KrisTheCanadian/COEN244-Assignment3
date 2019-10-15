@@ -1,11 +1,14 @@
 #pragma once
+#include "Person.h"
+#include "Property.h"
+
 class RealEstateManager
 {
 public:
 	RealEstateManager();
 	bool insertAgent(RealEstateAgent*);	//Adds a new agent to the agentRecordsArray
 	bool insertProperty(Property*); //Adds a properrty to the first available lovatin in the properrtyListingArray
-	bool propertysold(Property, Client*); //When a property is sold, the buyer will be stroed in the Property object and the object itself will be transferred from 
+	bool propertysold(Property*, Client*); //When a property is sold, the buyer will be stroed in the Property object and the object itself will be transferred from 
 										  //propertyListingArray to the archiveRecordsArray and null value will be inserted at its location at the propertyListingArray
 	void findHouseCity(string); //Determines all the houses for sale in a given city and prints them. String parameter of the functio  corresponds to a city name. 
 								//You would need to use dynamic_cast to determine the claass of the objects stored in the propertyListingArray

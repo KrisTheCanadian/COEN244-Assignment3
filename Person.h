@@ -18,5 +18,6 @@ public:
 private:
 	string name_;
 	string address_;
+	Date birth_;
 };
 
