@@ -4,15 +4,15 @@ RealEstateManager::RealEstateManager()
 {
 	for (int i = 0; i < max_number_of_agents_; i++)
 	{
-		agentRecordsArray_[i] = 0;
+		agentRecordsArray_[i] = nullptr;
 	}
 	for (int i = 0; i < listingsize_; i++)
 	{
-		propertyListingArray_[i] = 0;
+		propertyListingArray_[i] = nullptr;
 	}
 	for (int i = 0; i < archivesize_; i++)
 	{
-		archiveRecordsArray_[i] = 0;
+		archiveRecordsArray[i] = nullptr;
 	}
 }
 
@@ -47,15 +47,15 @@ bool RealEstateManager::propertysold(Property* prop, Client* buyer)
 	{
 		if (propertyListingArray_[i] == prop)
 		{
-			propertyListingArray_[i] = 0;
+			propertyListingArray_[i] = nullptr;
 		}
 		break;
 	}
 	for (int i = 0; i < archivesize_; i++)
 	{
-		if (archiveRecordsArray_[i] == 0)
+		if (archiveRecordsArray[i] == nullptr)
 		{
-			archiveRecordsArray_[i] = prop;
+			archiveRecordsArray[i] = prop;
 		}
 		break;
 	}
