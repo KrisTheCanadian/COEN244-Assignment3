@@ -2,11 +2,22 @@
 
 LandSale::LandSale() 
 	:area_(-1), price_(-1)
-{}
+{
+	this->setstreetaddy("Does not Exist");
+	this->setcityname("Does not Exist");
+	this->setseller(nullptr);
+	this->setagent(nullptr);
+}
 
-LandSale::LandSale(string, string, Client, RealEstateAgent, Date, double area, int price)
+LandSale::LandSale(string address, string cityName, Client seller, RealEstateAgent agent, Date listingDate, double area, int price)
 	:area_(area), price_(price)
-{}
+{
+	this->setstreetaddy(address);
+	this->setcityname(cityName);
+	this->setseller(&seller);
+	this->setagent(&agent);
+	this->setdate(listingDate);
+}
 
 double LandSale::getarea() { return area_; }
 void LandSale::setarea(double area) { area_ = area; }

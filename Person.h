@@ -13,6 +13,8 @@ public:
 	void setname(string);
 	string getaddy();
 	void setaddy(string);
+	Date getbirth();
+	void setbirth(Date birth);
 	~Person();
 	virtual void print();
 private:
