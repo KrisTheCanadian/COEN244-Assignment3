@@ -16,4 +16,9 @@ string Person::getaddy() { return address_; }
 void Person::setaddy(string addy) { address_ = addy; }
 Date Person::getbirth() { return birth_; }
 void Person::setbirth(Date birth) { birth_ = birth; }
-void Person::print() {}
+void Person::print() 
+{
+	cout << "[Person] Name: " + this->name_  << endl;
+	cout << "[Person] Address: " + this->address_ << endl;
+	this->birth_.print();
+}

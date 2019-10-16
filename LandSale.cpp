@@ -19,6 +19,16 @@ LandSale::LandSale(string address, string cityName, Client seller, RealEstateAge
 	this->setdate(listingDate);
 }
 
+void LandSale::print() 
+{
+	cout << "[Land Sale] Location: " + this->getstreetaddy() + ", " + this->getcityname() << endl;
+	this->getseller()->print();
+	this->getagent()->print();
+	this->getdate().print();
+	cout << "[Land Sale] Area: " << this->area_ << endl;
+	cout << "[Land Sale] Price: " + this->price_ << endl;
+}
+
 double LandSale::getarea() { return area_; }
 void LandSale::setarea(double area) { area_ = area; }
 int LandSale::getprice() { return price_; }

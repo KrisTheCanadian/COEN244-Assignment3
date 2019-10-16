@@ -20,12 +20,14 @@ bool RealEstateManager::insertAgent(RealEstateAgent* agent)
 {
 	for (int i = 0; i < max_number_of_agents_; i++)
 	{
-		if (agentRecordsArray_[i] == 0)
+		if (agentRecordsArray_[i] == nullptr)
 		{
 			agentRecordsArray_[i] = agent;
+			return true;
 		}
-		break;
+		
 	}
+	return false;
 }
 
 bool RealEstateManager::insertProperty(Property* prop)
@@ -35,9 +37,11 @@ bool RealEstateManager::insertProperty(Property* prop)
 		if (propertyListingArray_[i] == 0)
 		{
 			propertyListingArray_[i] = prop;
+			return true;
 		}
-		break;
+		
 	}
+	return false;
 }
 
 bool RealEstateManager::propertysold(Property* prop, Client* buyer)
@@ -48,17 +52,20 @@ bool RealEstateManager::propertysold(Property* prop, Client* buyer)
 		if (propertyListingArray_[i] == prop)
 		{
 			propertyListingArray_[i] = nullptr;
+			break;
 		}
-		break;
+		
 	}
 	for (int i = 0; i < archivesize_; i++)
 	{
 		if (archiveRecordsArray[i] == nullptr)
 		{
 			archiveRecordsArray[i] = prop;
+			return true;
 		}
-		break;
+		
 	}
+	return false;
 }
 
 void RealEstateManager::findHouseCity(string cityname)

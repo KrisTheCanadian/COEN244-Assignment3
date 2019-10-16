@@ -7,7 +7,13 @@ Property::Property(string addy, string city, Client* seller, RealEstateAgent* ag
 	:street_address_(addy),cityname_(city), seller_(seller), buyer_(0), agent_(agent), listingdate_(listing)
 {}
 
-
+void Property::print() 
+{
+	cout << "[Property] Location: " + this->getstreetaddy() + ", " + this->getcityname() << endl;
+	this->getseller()->print();
+	this->getagent()->print();
+	this->getdate().print();
+}
 string Property::getstreetaddy() { return street_address_;}
 void Property::setstreetaddy(string s) { street_address_ = s; }
 string Property::getcityname() { return cityname_; }

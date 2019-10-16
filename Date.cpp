@@ -18,7 +18,7 @@ void Date::setyear(int y){year_ = y;}
 
 void Date::print()
 {
-	std::cout << "Month: " << getmonth() << std::endl;
-	std::cout << "Day: " << getday() << std::endl;
-	std::cout << "Year: " << getyear() << std::endl;
+	std::cout << "[Date] Month: " << getmonth() << std::endl;
+	std::cout << "[Date] Day: " << getday() << std::endl;
+	std::cout << "[Date] Year: " << getyear() << std::endl;
 }
