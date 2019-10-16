@@ -9,7 +9,7 @@ Client::Client(string name, string addy, string social)
 	this->setname(name);
 	this->setaddy(addy);
 }
-
+Client::~Client() {}
 string Client::getsocial() { return socialinsurancenumber_; }
 void Client::setsocial(string social) { socialinsurancenumber_ = social; }
 void Client::print() 

@@ -22,3 +22,8 @@ void Person::print()
 	cout << "[Person] Address: " + this->address_ << endl;
 	this->birth_.print();
 }
+
+Person::~Person() 
+{
+
+}

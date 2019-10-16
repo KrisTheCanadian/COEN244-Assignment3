@@ -14,6 +14,7 @@ void Property::print()
 	this->getagent()->print();
 	this->getdate().print();
 }
+Property::~Property() {}
 string Property::getstreetaddy() { return street_address_;}
 void Property::setstreetaddy(string s) { street_address_ = s; }
 string Property::getcityname() { return cityname_; }

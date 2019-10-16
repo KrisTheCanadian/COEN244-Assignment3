@@ -28,7 +28,7 @@ void LandSale::print()
 	cout << "[Land Sale] Area: " << this->area_ << endl;
 	cout << "[Land Sale] Price: " + this->price_ << endl;
 }
-
+LandSale::~LandSale() {}
 double LandSale::getarea() { return area_; }
 void LandSale::setarea(double area) { area_ = area; }
 int LandSale::getprice() { return price_; }

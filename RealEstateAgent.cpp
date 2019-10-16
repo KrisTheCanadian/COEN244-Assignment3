@@ -23,6 +23,8 @@ void RealEstateAgent::print()
 	cout << "[Real Estate Agent] Employee ID: " + this->employee_id_ << endl;
 }
 
+RealEstateAgent::~RealEstateAgent() {}
+
 Date RealEstateAgent::getemployementdate() { return employment_date_; }
 void RealEstateAgent::setemployementdate(Date date) { employment_date_ = date; }
 int RealEstateAgent::getemployeeid() { return employee_id_; }

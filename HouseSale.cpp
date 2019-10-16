@@ -36,3 +36,5 @@ void HouseSale::print()
 	cout << "[House Sale] Number of Rooms: " << this->no_of_rooms_ << endl;
 	cout << "[House Sale] Price: " << this->price_ << endl;
 }
+
+HouseSale::~HouseSale() {}
