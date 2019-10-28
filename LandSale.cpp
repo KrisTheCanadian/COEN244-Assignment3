@@ -10,13 +10,8 @@ LandSale::LandSale()
 }
 
 LandSale::LandSale(string address, string cityName, Client seller, RealEstateAgent agent, Date listingDate, double area, int price)
-	:area_(area), price_(price)
+	:Property(address, cityName, &seller, &agent, listingDate), area_(area), price_(price)
 {
-	this->setstreetaddy(address);
-	this->setcityname(cityName);
-	this->setseller(&seller);
-	this->setagent(&agent);
-	this->setdate(listingDate);
 }
 
 void LandSale::print() 

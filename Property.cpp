@@ -9,10 +9,13 @@ Property::Property(string addy, string city, Client* seller, RealEstateAgent* ag
 
 void Property::print() 
 {
-	cout << "[Property] Location: " + this->getstreetaddy() + ", " + this->getcityname() << endl;
-	this->getseller()->print();
-	this->getagent()->print();
-	this->getdate().print();
+	if (this != nullptr)
+	{
+		cout << "[Property] Location: " + this->getstreetaddy() + ", " + this->getcityname() << endl;
+		this->getseller()->print();
+		this->getagent()->print();
+		this->getdate().print();
+	}
 }
 Property::~Property() {}
 string Property::getstreetaddy() { return street_address_;}

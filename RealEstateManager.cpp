@@ -83,9 +83,12 @@ void RealEstateManager::findPropertiesAgent(RealEstateAgent* agent)
 {
 	for (int i = 0; i < listingsize_; i++)
 	{
-		if (propertyListingArray_[i]->getagent() == agent)
+		if (propertyListingArray_[i] != nullptr)
 		{
-			propertyListingArray_[i]->print();
+			if (propertyListingArray_[i]->getagent() == agent)
+			{
+				propertyListingArray_[i]->print();
+			}
 		}
 	}
 }
