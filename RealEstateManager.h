@@ -20,6 +20,6 @@ private:
 	//The  following are array of pointers, all the arrays should be initialized to null values
 	RealEstateAgent* agentRecordsArray_[max_number_of_agents_];
 	Property* propertyListingArray_[listingsize_];
-	Property* archiveRecordsArray[archivesize_];
+	Property* archiveRecordsArray_[archivesize_];
 };
 

@@ -12,7 +12,7 @@ RealEstateManager::RealEstateManager()
 	}
 	for (int i = 0; i < archivesize_; i++)
 	{
-		archiveRecordsArray[i] = nullptr;
+		archiveRecordsArray_[i] = nullptr;
 	}
 }
 
@@ -58,9 +58,9 @@ bool RealEstateManager::propertysold(Property* prop, Client* buyer)
 	}
 	for (int i = 0; i < archivesize_; i++)
 	{
-		if (archiveRecordsArray[i] == nullptr)
+		if (archiveRecordsArray_[i] == nullptr)
 		{
-			archiveRecordsArray[i] = prop;
+			archiveRecordsArray_[i] = prop;
 			return true;
 		}
 		
