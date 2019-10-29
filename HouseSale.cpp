@@ -22,11 +22,11 @@ HouseSale::HouseSale()
 
 void HouseSale::print() 
 {
-	cout << "[House Sale] Location: " + this->getstreetaddy() + ", " + this->getcityname() << endl;
+	cout << "[House Sale] Location: " << this->getstreetaddy() << ", " << this->getcityname() << endl;
 	this->getseller()->print();
 	this->getagent()->print();
 	this->getdate().print();
-	cout << "[House Sale] Built in: " + this->getbuildyear() << endl;
+	cout << "[House Sale] Built in: " << this->getbuildyear() << endl;
 	cout << "[House Sale] Number of Rooms: " << this->no_of_rooms_ << endl;
 	cout << "[House Sale] Price: " << this->price_ << endl;
 }

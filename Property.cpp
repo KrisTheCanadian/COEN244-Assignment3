@@ -11,7 +11,7 @@ void Property::print()
 {
 	if (this != nullptr)
 	{
-		cout << "[Property] Location: " + this->getstreetaddy() + ", " + this->getcityname() << endl;
+		cout << "[Property] Location: " << this->getstreetaddy() + ", " << this->getcityname() << endl;
 		this->getseller()->print();
 		this->getagent()->print();
 		this->getdate().print();

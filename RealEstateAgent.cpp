@@ -17,10 +17,10 @@ RealEstateAgent::RealEstateAgent(string name, string address, Date employment_da
 
 void RealEstateAgent::print() 
 {
-	cout << "[Real Estate Agent] Name: " + this->getname() << endl;
-	cout << "[Real Estate Agent] Address: " + this->getaddy() << endl;
+	cout << "[Real Estate Agent] Name: " << this->getname() << endl;
+	cout << "[Real Estate Agent] Address: " << this->getaddy() << endl;
 	this->getemployementdate().print();
-	cout << "[Real Estate Agent] Employee ID: " + this->employee_id_ << endl;
+	cout << "[Real Estate Agent] Employee ID: " << this->employee_id_ << endl;
 }
 
 RealEstateAgent::~RealEstateAgent() {}

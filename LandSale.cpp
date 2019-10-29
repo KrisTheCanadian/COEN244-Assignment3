@@ -16,12 +16,12 @@ LandSale::LandSale(string address, string cityName, Client seller, RealEstateAge
 
 void LandSale::print() 
 {
-	cout << "[Land Sale] Location: " + this->getstreetaddy() + ", " + this->getcityname() << endl;
+	cout << "[Land Sale] Location: " << this->getstreetaddy() + ", " << this->getcityname() << endl;
 	this->getseller()->print();
 	this->getagent()->print();
 	this->getdate().print();
 	cout << "[Land Sale] Area: " << this->area_ << endl;
-	cout << "[Land Sale] Price: " + this->price_ << endl;
+	cout << "[Land Sale] Price: " << this->price_ << endl;
 }
 LandSale::~LandSale() {}
 double LandSale::getarea() { return area_; }

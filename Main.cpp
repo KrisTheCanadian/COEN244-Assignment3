@@ -70,7 +70,7 @@ void test() {
 	m1->insertProperty(l1);
 	m1->insertProperty(l2);
 	m1->findPropertiesAgent(r1);
-	m1->findHouseCity("Montreal");
+	m1->findHouseCity((std::string)"Montreal");
 	m1->propertysold(a1, c3);
 
 
@@ -140,6 +140,5 @@ int main()
 {
 
 	test();
-	system("pause");
 	return 0;
 }

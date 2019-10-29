@@ -72,7 +72,10 @@ void RealEstateManager::findHouseCity(string cityname)
 {
 	for (int i = 0; i < listingsize_; i++)
 	{
-		if (propertyListingArray_[i]->getcityname() == cityname)
+		if (propertyListingArray_[i] == nullptr)
+			continue;
+
+		if (propertyListingArray_[i]->getcityname().compare(cityname) == 0)
 		{
 			propertyListingArray_[i]->print();
 		}
